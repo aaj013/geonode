@@ -114,7 +114,7 @@ services:
       - celery
       - geoserver
     ports:
-      - "80:80"
+      - "8000:80"
     volumes:
       - statics:/mnt/volumes/statics
 

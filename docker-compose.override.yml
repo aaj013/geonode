@@ -10,11 +10,11 @@ services:
       - '.:/usr/src/app'
     environment:
       - DEBUG=False
-      - GEONODE_LB_HOST_IP=localhost
+      - GEONODE_LB_HOST_IP=tm.icfoss.org
       - GEONODE_LB_PORT=80
-      - SITEURL=http://localhost/
-      - ALLOWED_HOSTS=['localhost', ]
-      - GEOSERVER_PUBLIC_LOCATION=http://localhost/geoserver/
+      - SITEURL=http://tm.icfoss.org/
+      - ALLOWED_HOSTS=['tm.icfoss.org', ]
+      - GEOSERVER_PUBLIC_LOCATION=http://tm.icfoss.org/geoserver/
 
   celery:
     build: .
@@ -22,14 +22,14 @@ services:
       - '.:/usr/src/app'
     environment:
       - DEBUG=False
-      - GEONODE_LB_HOST_IP=localhost
+      - GEONODE_LB_HOST_IP=tm.icfoss.org
       - GEONODE_LB_PORT=80
-      - SITEURL=http://localhost/
-      - ALLOWED_HOSTS=['localhost', ]
-      - GEOSERVER_PUBLIC_LOCATION=http://localhost/geoserver/
+      - SITEURL=http://tm.icfoss.org/
+      - ALLOWED_HOSTS=['tm.icfoss.org', ]
+      - GEOSERVER_PUBLIC_LOCATION=http://tm.icfoss.org/geoserver/
 
   geoserver:
     environment:
-      - GEONODE_LB_HOST_IP=localhost
+      - GEONODE_LB_HOST_IP=tm.icfoss.org
       - GEONODE_LB_PORT=80
   #    - NGINX_BASE_URL=
