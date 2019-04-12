@@ -16,11 +16,11 @@
   {% else %}
   <div class="jumbotron">
   	<div class="container">
-        <h1>{{custom_theme.jumbotron_welcome_title|default:_("Welcome")}}</h1>
+        <h1>{{custom_theme.jumbotron_welcome_title|default:_("KSDI")}}</h1>
   		<p></p>
-		<p>{{custom_theme.jumbotron_welcome_content|default:_("GeoNode is an open source platform for sharing geospatial data and maps.")}}</p>
+		<p>{{custom_theme.jumbotron_welcome_content|default:_("The Kerala State Spatial Data Infrastructure (KSDI) is an Internet based Geo-spatial Data Directory for the state that facilitates users of the system to share and explore data related to political and administrative boundaries, natural resources, transportation and infrastructure, demography, agro and socio economy etc., of the state.")}}</p>
 		{% if not custom_theme.jumbotron_cta_hide %}
-  		<a class="btn btn-default btn-lg" target="_blank" href="{{custom_theme.jumbotron_cta_link|default:_("http://docs.geonode.org/en/master/tutorials/users/index.html")}}" role="button">{{custom_theme.jumbotron_cta_text|default:_("Get Started &raquo;")}}</a>
+  		<a class="btn btn-default btn-lg" target="_blank" href="{{custom_theme.jumbotron_cta_link|default:_("javascript:void(0)")}}" role="button">{{custom_theme.jumbotron_cta_text|default:_("Get Started &raquo;")}}</a>
 		{% endif %}
 	</div>
   </div>
